@@ -29,7 +29,15 @@
     // Dichiarazione Metodo che tramite funzione incassiG calcola la media degli incassi giornalieri
     public function incassiG(){
       $prezzo = $this->media_spettatori * $this->costo_biglietto;
-      return($prezzo);
+      echo "
+      <img src=\" $this->logo \" alt= \"Movie 1\">
+      <div class=\"card-body\">
+        <h4 class=\"card-title display-4\"> $this->titolo </h4>
+        <p class=\"card-text text-muted\"> Media Spettatori: $this->media_spettatori </p>
+        <p class=\"card-text text-muted\"> Costo Biglietto: $this->costo_biglietto € </p>
+        <p class=\"card-text text-muted\"> Genere: $this->genere </p>
+        <p class=\"card-text text-muted\"> L'incasso medio giornaliero è di: <strong> $prezzo € </strong> </p> 
+      </div>";
     }
   }
 
